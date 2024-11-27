@@ -1,0 +1,80 @@
+/* Reseta estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar fixa no topo */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #444;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .sidebar .menu li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .sidebar .menu a:hover {
+    background-color: #555;
+  }
+  
+  /* Ativação do menu */
+  .sidebar.active {
+    left: 0;
+  }
+  
+  /* Espaçamento do conteúdo principal */
+  main {
+    margin-top: 80px;
+    padding: 1rem;
+  }
+  
