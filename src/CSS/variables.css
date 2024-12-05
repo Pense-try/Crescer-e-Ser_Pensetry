@@ -1,0 +1,32 @@
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+
+    --cor-fonte-1: #ffffff;
+
+    --cor-1: #a3c084;
+    --cor-2: #f594b2;
+    --cor-3: #c4d1eb;
+    --cor-4: #dabbda;
+    --cor-5: #fff89f;
+    --cor-6: #FFFFFF;
+
+    --cor-hover: #f594b2;
+
+    --cor-fundo-1: #eff8ff;
+    --cor-fundo-2: #ffe0f2;
+
+    --fonte-tamanho-1: 4rem;
+    --fonte-tamanho-2: 1.5rem;
+    --fonte-tamanho-3: 1.6rem;
+    --fonte-tamanho-4: 1.4rem;
+    --fonte-tamanho-5: 0.875rem;
+    --fonte-tamanho-6: 0.75rem;
+
+    --fonte-peso-1: 700;
+    --fonte-peso-2: 600;
+    --fonte-peso-3: 500;
+    --fonte-peso-4: 400;
+    --fonte-peso-5: 300;
+    --fonte-peso-6: 200;
+
+}

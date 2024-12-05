@@ -1,0 +1,74 @@
+/* Reseta estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar fixa no topo */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem 1rem 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar img {
+    width: 100px;
+  }
+  
+  .menu-button {
+    font-size: 2rem;
+    background: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    overflow-y: auto;
+    transition: left 0.5s ease;
+    z-index: 999;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .sidebar .menu li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar .menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .sidebar .menu a:hover {
+    background-color: #f3f3f3;
+  }
+  
+  /* Ativação do menu */
+  .sidebar.active {
+    left: 0;
+  }

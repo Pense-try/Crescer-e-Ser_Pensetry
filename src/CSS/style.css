@@ -1,80 +1,95 @@
-/* Reseta estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar fixa no topo */
-  .navbar {
-    position: fixed;
-    top: 0;
+body, main {
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    height: 100%;
+}
+
+.content__section__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cor-fundo-1);
+    overflow: hidden;
+}
+
+.content__section__home__text {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    z-index: 1000;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .menu-button {
-    font-size: 1.5rem;
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #444;
-    overflow-y: auto;
-    transition: left 0.3s ease;
-    z-index: 999;
-  }
-  
-  .sidebar .menu {
-    list-style: none;
-    padding: 1rem;
-  }
-  
-  .sidebar .menu li {
-    margin: 1rem 0;
-  }
-  
-  .sidebar .menu a {
-    color: #fff;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.elemento__circulo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: var(--cor-1);
+    border-radius: 50%;
+    left: -100px;
+    bottom: -300px;
+}
+
+
+
+.home__text {
+    width: 40%;
+}
+
+.home__text p {
+    font-weight: 500;
+    color: var(--cor-2);
+    font-size: var(--fonte-tamanho-3);
+    font-weight: var(--fonte-peso-3);
+    font-family: var(--fonte-principal);
+}
+
+.home__text h1 {
+    font-weight: 700;
+    color: var(--cor-1);
+    font-size: var(--fonte-tamanho-1);
+    font-weight: var(--fonte-peso-1);
+    font-family: var(--fonte-principal);
+    padding-bottom: 1rem;
+}
+
+.home__text h2 {
+    font-weight: 500;
+    color: var(--cor-2);
+    font-size: var(--fonte-tamanho-4);
+    font-weight: var(--fonte-peso-4);
+    font-family: var(--fonte-principal);
+    padding: 2rem 0;
+}
+
+.home__text a {
+    font-weight: 500;
+    color: var(--cor-fonte-1);
+    font-size: var(--fonte-tamanho-4);
+    font-weight: var(--fonte-peso-3);
+    font-family: var(--fonte-principal);
     text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-    padding: 0.5rem;
-    transition: background 0.3s;
-  }
-  
-  .sidebar .menu a:hover {
-    background-color: #555;
-  }
-  
-  /* Ativação do menu */
-  .sidebar.active {
-    left: 0;
-  }
-  
-  /* Espaçamento do conteúdo principal */
-  main {
-    margin-top: 80px;
-    padding: 1rem;
-  }
-  
+    padding: 0.5rem 4rem;
+    background-color: var(--cor-2);
+    border-radius: 2rem;
+    transition: all ease-out 500ms;
+}
+
+.home__text a:hover {
+    background-color: var(--cor-1);
+    transition: all ease-in 300ms;
+}
+
+.home__Img {
+    width: 40%;
+}
+
+.content__section__home__text img {
+    width: 600px;
+    height: 600px;
+    background-color: var(--cor-2);
+    border-radius: 50%;
+    border: 10px solid var(--cor-1);
+}

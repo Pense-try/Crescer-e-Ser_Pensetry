@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Crescer e Ser</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./src/CSS/reset.css">
     <link rel="stylesheet" href="./src/CSS/variables.css">
+    <link rel="stylesheet" href="./src/CSS/navbar.css">
     <link rel="stylesheet" href="./src/CSS/style.css">
     
 </head>
 <body>
     <header class="navbar">
         <button id="menu-toggle" class="menu-button">&#9776;</button>
-        <h1 class="logo">Site da Thais</h1>
+        <a href=""><img src="./src/Img/Logo_crescer.png" alt=""></a> 
       </header>
     
       <nav id="sidebar" class="sidebar">
@@ -27,9 +32,31 @@
       </nav>
     
       <main>
-        <section id="home">
-          <h2>Bem-vinda ao site</h2>
-          <p>Conteúdo principal...</p>
+        <section class="content__section__home" id="home">
+          <div class="content__section__home__text">
+
+            <div class="elemento__circulo"></div>
+
+            <div class="home__text">
+              <p>Bem-vindo à Clínica</p>
+              <h1>Crescer e Ser</h1>
+              <p>Cuidando da sua mente, acolhendo suas emoções</p>
+
+              <h2>Descubra como podemos ajudar!</h2>
+              <a href="">Saiba mais</a>
+            </div>
+
+            <div class="home__img">
+              <img src="./src/Img/Img__home.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="content__section__about" id="about">
+          <div class="content__section__about__text">
+            <h2>Sobre</h2>
+            <p>Conteúdo sobre...</p>
+          </div>
         </section>
       </main>
     
