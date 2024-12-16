@@ -2,6 +2,7 @@
     --fonte-principal: 'Poppins', sans-serif;
 
     --cor-fonte-1: #ffffff;
+    --cor-fonte-2: #5c5c5c;
 
     --cor-1: #a3c084;
     --cor-2: #f594b2;
@@ -16,11 +17,13 @@
     --cor-fundo-2: #ffe0f2;
 
     --fonte-tamanho-1: 4rem;
-    --fonte-tamanho-2: 1.5rem;
-    --fonte-tamanho-3: 1.6rem;
-    --fonte-tamanho-4: 1.4rem;
-    --fonte-tamanho-5: 0.875rem;
-    --fonte-tamanho-6: 0.75rem;
+    --fonte-tamanho-2: 3rem;
+    --fonte-tamanho-3: 2rem;
+    --fonte-tamanho-4: 1.6rem;
+    --fonte-tamanho-5: 1.2rem;
+    --fonte-tamanho-6: 1rem;
+    --fonte-tamanho-7: 0.8rem;
+    --fonte-tamanho-8: 0.6rem;
 
     --fonte-peso-1: 700;
     --fonte-peso-2: 600;
