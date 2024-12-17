@@ -207,8 +207,8 @@ body, main {
 }
 
 .content__section__about__text {
-    width: 60%;
-    padding: 2rem 2rem;
+    max-width: 1200px;
+    padding: 2rem;
     background-color: #f594b32d ;
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -232,6 +232,91 @@ body, main {
     font-family: var(--fonte-principal);
     letter-spacing: 1px;
 }
+
+@media (max-width: 400px) {
+    .content__section__about__text {
+        padding: 1rem;
+    }
+    .content__section__about__text h1 {
+        font-size: var(--fonte-tamanho-3);
+    }
+    .content__section__about__text p {
+        font-size: var(--fonte-tamanho-7);
+    }
+}
+
+
+/* SOBRE THAIS */
+
+.about-client {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    flex: 1;
+}
+
+.photo-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+}
+
+.text-container h1 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-client {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        padding: 20px 0;
+    }
+
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-container h2 {
+        font-size: 1rem;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* CARDS */
 
