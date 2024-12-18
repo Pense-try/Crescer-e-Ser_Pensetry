@@ -72,3 +72,9 @@
   .sidebar.active {
     left: 0;
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.6rem;
+    }
+  }
