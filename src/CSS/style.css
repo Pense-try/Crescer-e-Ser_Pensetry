@@ -198,6 +198,7 @@ body, main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
     padding: 6rem 0;
     background-image: url("/src/Img/Img_bg_crescer.png");
     background-size: cover;
@@ -369,55 +370,129 @@ body, main {
 
 /* CARDS */
 
-.card-container {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+.content__section__cards__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
     gap: 1rem;
+}
+
+.content__section__cards__title h1 {
+    color: var(--cor-2);
+    font-size: var(--fonte-tamanho-2);
+    font-weight: var(--fonte-peso-1);
+    font-family: var(--fonte-principal);
+}
+
+/* Estilização da seção */
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 cards por linha */
+    gap: 1.5rem; /* Espaço entre os cards */
     padding: 2rem;
-    width: 100%;
-    max-width: 1200px;
-}
-
-@media (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .card-container {
-        grid-template-columns: 1fr; /* 1 card por linha em telas muito pequenas */
-    }
-}
-
-.card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    justify-items: center; /* Centraliza os cards no grid */
+    background-color: #f594b32d; /* Cor de fundo da seção */
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante espaçamento interno equilibrado */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.icon {
-    font-size: 2.5rem;
-    color: #4CAF50;
-    margin-bottom: 0.5rem;
-}
-
-h3 {
-    font-size: 1.5rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ícone */
+  .card i {
+    margin-bottom: 1rem;
+  }
+  
+  /* Título */
+  .card h2 {
+    font-size: var(--fonte-tamanho-4);
+    font-family: var(--fonte-principal);
+  }
+  
+  /* Parágrafo */
+  .card p {
+    font-size: var(--fonte-tamanho-6);
+    font-family: var(--fonte-principal);
     margin: 0.5rem 0;
-    color: #333;
-}
+  }
 
-p {
-    font-size: 1rem;
-    color: #666;
-}
+  .card i, h2, p {
+    color: var(--cor-2);
+  }
+  
+  /* Link */
+  .card a {
+    font-size: var(--fonte-tamanho-6);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: var(--cor-fonte-1);
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all ease-out 500ms;
+    background-color: var(--cor-1);
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
+  
+  .card a:hover {
+    background-color: var(--cor-2);
+    transition: all ease-in 500ms;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1440px) {
+    .card-section {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .card-section {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content__section__cards__title {
+        padding: 0;
+    }
+    .content__section__cards__title h1 {
+      font-size: var(--fonte-tamanho-4);
+    }
+    .card {
+      width: 280px;
+      height: 380px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-section {
+      grid-template-columns: 1fr; /* 1 card por linha */
+    }
+    .card {
+      width: 90%;
+      height: auto; /* Adapta altura automaticamente */
+    }
+  }
+  
