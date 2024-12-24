@@ -302,7 +302,7 @@ body, main {
 .content__section__about__navgation a {
     text-decoration: none;
     color: var(--cor-fonte-1);
-    font-size: var(--fonte-tamanho-5);
+    font-size: var(--fonte-tamanho-6);
     font-weight: var(--fonte-peso-3);
     font-family: var(--fonte-principal);
     letter-spacing: 1px;
@@ -493,6 +493,104 @@ body, main {
     .card {
       width: 90%;
       height: auto; /* Adapta altura automaticamente */
+    }
+  }
+
+
+
+/* Estilização da seção de localização */
+.location-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos fiquem em linha ou em coluna dependendo do tamanho */
+    gap: 2rem;
+    padding: 8rem 6rem;
+    align-items: center;
+    background-color: var(--cor-fundo-1);
+  }
+  
+  /* Texto da localização */
+  .location-text {
+    flex: 1;
+    max-width: 50%; /* Limita a largura para metade da tela em desktops */
+    text-align: left;
+  }
+  
+  .location-text h2 {
+    font-size: var(--fonte-tamanho-2);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-3);
+    color: var(--cor-1);
+    margin-bottom: 1rem;
+  }
+  
+  .location-text p {
+    font-size: var(--fonte-tamanho-5);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-5);
+    color: var(--cor-2);
+    margin-bottom: 0.5rem;
+  }
+  
+  .location-text a {
+    text-decoration: none;
+    color: var(--cor-fonte-1);
+    font-size: var(--fonte-tamanho-5);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-3);
+    margin-top: 1rem;
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    background-color: var(--cor-2);
+  }
+  
+  .location-text a:hover {
+    background-color: var(--cor-1);
+    transition: all 0.3s ease-in;
+  }
+  
+  /* Mapa */
+  .location-map {
+    flex: 1;
+    max-width: 50%; /* Limita a largura para metade da tela em desktops */
+  }
+  
+  .location-map iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .location-section {
+      flex-direction: column; /* Empilha os elementos em telas menores */
+      padding: 2rem;
+    }
+  
+    .location-text, .location-map {
+      max-width: 100%; /* Ocupará toda a largura */
+    }
+  
+    .location-map iframe {
+      height: 250px; /* Ajusta a altura do mapa */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .location-text h2 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+  
+    .location-text p {
+      font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
+  
+    .location-map iframe {
+      height: 200px; /* Ajusta ainda mais a altura do mapa */
     }
   }
   
