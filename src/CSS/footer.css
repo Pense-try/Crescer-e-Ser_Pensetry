@@ -1,0 +1,130 @@
+/* Estilo geral do footer */
+.clinic-footer {
+    background-color: var(--cor-footer-1);
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container principal */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* Logo do footer */
+  .footer-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  .footer-logo img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer-logo img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Navegação interna */
+  .footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .footer-navigation a {
+    text-decoration: none;
+    font-size: var(--fonte-tamanho-5);
+    font-weight: var(--fonte-peso-4);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-1);
+    transition: color 0.3s ease;
+  }
+  
+  .footer-navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Informações da clínica */
+  .footer-info p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0.2rem 0;
+  }
+  
+  /* Links de redes sociais */
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-socials a {
+    text-decoration: none;
+    font-size: var(--fonte-tamanho-5);
+    font-weight: var(--fonte-peso-3);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    background-color: var(--cor-1);
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    transition: all ease-out 300ms;
+  }
+  
+  .footer-socials a:hover {
+    transition: all ease-in 300ms;
+    background-color: var(--cor-4);
+  }
+
+  .footer-info p {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-1);
+    font-size: var(--fonte-tamanho-5);
+    font-weight: var(--fonte-peso-3);
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footer-logo {
+      width: 150px;
+      height: 150px;
+    }
+    .footer-logo img {
+      max-width: 120px;
+    }
+  
+    .footer-navigation a {
+      font-size: 0.8rem;
+    }
+  
+    .footer-socials a {
+      font-size: 0.9rem;
+    }
+  
+    .footer-socials a i {
+      font-size: 1rem;
+    }
+
+    .footer-info p {
+      font-size: 0.8rem;
+    }
+  }
+  
