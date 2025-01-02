@@ -1,7 +1,7 @@
 /* Estilo geral do footer */
 .clinic-footer {
     background-color: var(--cor-footer-1);
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -11,13 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
   /* Logo do footer */
   .footer-logo {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@
   }
 
   .footer-logo img {
-    max-width: 150px;
+    max-width: 125px;
     height: auto;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -73,7 +73,7 @@
   
   .footer-socials a {
     text-decoration: none;
-    font-size: var(--fonte-tamanho-5);
+    font-size: var(--fonte-tamanho-6);
     font-weight: var(--fonte-peso-3);
     font-family: var(--fonte-principal);
     color: var(--cor-fonte-1);

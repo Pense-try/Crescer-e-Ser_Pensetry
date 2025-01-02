@@ -232,6 +232,7 @@ body, main {
     font-weight: var(--fonte-peso-5);
     font-family: var(--fonte-principal);
     letter-spacing: 1px;
+    line-height: 1.6rem;
 }
 
 .content__section__about__btn {
@@ -269,6 +270,7 @@ body, main {
     }
     .content__section__about__text p {
         font-size: var(--fonte-tamanho-7);
+        line-height: 1rem;
     }
     .content__section__about__btn {
         flex-direction: column;
@@ -340,7 +342,6 @@ body, main {
         margin: 0.8rem 0; /* Garante espaçamento vertical entre links */
         flex: 1 1 calc(100% - 1rem); /* Em telas menores, cada link ocupa 100% da largura */
     }
-
     .content__section__about__navgation h1 {
         font-size: var(--fonte-tamanho-3); /* Diminui o tamanho do título */
     }
@@ -350,11 +351,9 @@ body, main {
     .content__section__about__navgation {
         gap: 0.5rem; /* Reduz espaço entre os elementos */
     }
-
     .content__section__about__navgation__links {
         margin: 0 4rem;
     }
-
     .content__section__about__navgation a {
         font-size: var(--fonte-tamanho-7); /* Tamanho menor para links em telas muito pequenas */
         padding: 0.6rem 1rem; /* Padding ainda menor */
@@ -362,7 +361,6 @@ body, main {
         flex: 1 1 calc(100% - 0.5rem); /* Adapta ainda mais o espaçamento em telas pequenas */
         width: 100%; /* Ocupa toda a largura em telas muito pequenas */
     }
-
     .content__section__about__navgation h1 {
         font-size: var(--fonte-tamanho-4); /* Ajusta o tamanho do título */
     }
@@ -570,11 +568,9 @@ body, main {
       flex-direction: column; /* Empilha os elementos em telas menores */
       padding: 2rem;
     }
-  
     .location-text, .location-map {
       max-width: 100%; /* Ocupará toda a largura */
     }
-  
     .location-map iframe {
       height: 250px; /* Ajusta a altura do mapa */
     }
@@ -584,16 +580,16 @@ body, main {
     .location-text h2 {
       font-size: 1.5rem; /* Reduz o tamanho do título */
     }
-  
     .location-text p {
       font-size: 0.9rem; /* Ajusta o tamanho do texto */
     }
-  
+    .location-text a {
+      font-size: 0.9rem; /* Ajusta o tamanho do botão */
+    }
     .location-map iframe {
       height: 200px; /* Ajusta ainda mais a altura do mapa */
     }
   }
-
   
 /* Estilo geral da seção */
 .contact-section {
@@ -675,17 +671,20 @@ body, main {
 /* Responsividade */
 @media (max-width: 768px) {
   .contact-section {
-    padding: 1rem 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
   }
-
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-info p {
+    font-size: 1rem;
+  }
   .contact-info ul {
     gap: 0.5rem;
   }
-
   .contact-info li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-
   .contact-image img {
     max-width: 100%; /* Em telas menores, a imagem ocupa toda a largura */
     max-height: 300px; /* Ajusta a altura */
