@@ -18,20 +18,40 @@
     
 </head>
 <body>
-    <header class="navbar">
-        <button id="menu-toggle" class="menu-button">&#9776;</button>
-        <a href=""><img src="./src/Img/Logo_crescer.png" alt=""></a> 
-      </header>
-    
-      <nav id="sidebar" class="sidebar">
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#contact">Contato</a></li>
+  <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="#"><img src="./src/Img/Logo_crescer.png" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="./servicos.html" class="nav-link">Serviços</a>
+                    <div class="dropdown-content">
+                        <a href="./servicos.html#eletrica">Elétrica/Eletrônica</a>
+                        <a href="./servicos.html#automacao">Automação Industrial</a>
+                        <a href="./servicos.html#solares">Painéis Solares</a>
+                      </div>
+                </li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./src/Img/navbar/menu-aberto.png" alt=""></button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="./projetos.html" class="nav-link">Projetos</a></li>
+            <li class="nav-item"><a href="./servicos.html" class="nav-link">Serviços</a></li>
         </ul>
-      </nav>
+    </div>
+</header>
     
       <main>
         <section class="content__section__home" id="home">
@@ -157,7 +177,7 @@
               <a href="#">Saiba mais</a>
             </div>
           </div>          
-        </section>
+        </section> 
 
         <section class="content__location" id="location">
           <div class="location-section">
