@@ -67,7 +67,7 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
 }
 
 .nav-item:hover .dropdown-content {
