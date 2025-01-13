@@ -1,15 +1,10 @@
-.equipe-banner {
-    width: 100%;
-    height: 50vh;
-}
-
 .section-thais {
-    height: 100vh; 
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    background-color: #fff;
+    background-image: linear-gradient(to left bottom, #fff4fc, #fef7fe, #fdfaff, #fefdff, #ffffff);
     position: relative;
     overflow: hidden;
   }
@@ -25,23 +20,39 @@
   }
 
   .info-thais h2 {
-    font-size: 24px;
-    color: #333;
+    font-size: var(--fonte-tamanho-4);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-3);
+    color: var(--cor-2);
     margin-bottom: 10px;
     text-align: center; /* Centraliza horizontalmente */
   }
 
   .info-thais h3 {
-    font-size: 20px;
-    color: #555;
+    font-size: var(--fonte-tamanho-2);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-3);
+    color: var(--cor-1);
     margin-bottom: 15px;
     text-align: center; /* Centraliza horizontalmente */
   }
 
-  .info-thais p {
-    color: #666;
-    margin-bottom: 15px;
+  .info-thais h4 {
+    font-size: var(--fonte-tamanho-6);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-3);
+    color: var(--cor-2);
+    margin-bottom: 2rem;
     text-align: center; /* Centraliza horizontalmente */
+  }
+
+  .info-thais p {
+    font-size: var(--fonte-tamanho-5);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-5);
+    color: var(--cor-2);
+    margin-bottom: 1rem;
+    text-align: left; /* Centraliza horizontalmente */
   }
 
   .info-thais .links {
@@ -53,7 +64,7 @@
   /* Estilo da imagem da Thais */
   .image-thais {
     flex: 1;
-    max-width: 400px;
+    max-width: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -62,11 +73,12 @@
 
   .image-thais img {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     object-fit: contain;
     position: absolute;
     bottom: -20px; /* Colado na parte inferior */
     right: 0;
+    filter: drop-shadow(4px 2px 10px rgba(0, 0, 0, 0.35));
   }
 
   /* Responsividade */
@@ -78,20 +90,30 @@
       flex-direction: column; /* Empilha os elementos verticalmente */
       align-items: center;
     }
-
     .info-thais {
       max-width: 100%;
       align-items: center; /* Centraliza os textos horizontalmente */
     }
-
+    .info-thais h2 {
+      font-size: var(--fonte-tamanho-5);
+    }
+    .info-thais h3 {
+      font-size: 1.8rem;
+    }
+    .info-thais h4 {
+      font-size: var(--fonte-tamanho-7);
+    }
+    .info-thais p {
+      font-size: var(--fonte-tamanho-6);
+    }
     .image-thais {
       max-width: 100%;
       justify-content: center;
       margin-top: 20px;
     }
-
     .image-thais img {
       position: static; /* Remove o posicionamento absoluto no mobile */
+      max-width: 300px;
     }
   }
 
