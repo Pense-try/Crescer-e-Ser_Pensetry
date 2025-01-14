@@ -1,120 +1,19 @@
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap; /* Permite a quebra dos elementos */
-    align-items: center; /* Centraliza os elementos verticalmente */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
-    gap: 2rem;
-    background: var(--cor-fundo-1);
-    text-align: center; /* Para centralizar o texto nos elementos, se necessário */
-  }
-  
-  .hero-content {
-    max-width: 50%;
-  }
-  
-  .hero-title {
-    font-size: var(--fonte-tamanho-2);
-    font-weight: var( --fonte-peso-3);
-    font-family: var(--fonte-principal);
-    color: var(--cor-1);
-    margin-bottom: 15px;
-  }
-  
-  .hero-subtitle {
-    font-size: var(--fonte-tamanho-4);
-    font-weight: var(--fonte-peso-4);
-    font-family: var(--fonte-principal);
-    color: var(--cor-2);
-    margin-bottom: 2rem;
-  }
-  
-  .hero-btn {
-    color: var(--cor-fonte-1);
-    font-size: var(--fonte-tamanho-4);
-    font-weight: var(--fonte-peso-3);
-    font-family: var(--fonte-principal);
-    text-decoration: none;
-    padding: 0.5rem 4rem;
-    background-color: var(--cor-2);
-    border-radius: 2rem;
-    transition: all ease-out 500ms;
-  }
-  
-  .hero-btn:hover {
-    background-color: var(--cor-1);
-    transition: all ease-in 300ms;
-  }
-
-  .hero-image {
-    flex: 0 auto; /* Garante que o tamanho da imagem seja controlado manualmente */
-    max-width: 100%; /* Mantém a imagem responsiva */
-    aspect-ratio: 1 / 1; /* Garante a proporção de quadrado */
-    width: 500px; /* Largura inicial */
-    height: auto; /* Altura calculada automaticamente pela proporção */
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir todo o quadrado */
-    border-radius: 50%;
-    border: 10px solid var(--cor-1);
-  }
-
-  
-  
-  /* Responsividade */
-
-  @media (max-width: 1024px) {
-    .hero {
-      flex-direction: column-reverse;
-      justify-content: center;
-    }
-    .hero-content {
-        max-width: 80%;
-      }
-    .hero-image {
-        width: 400px; /* Reduz a largura para 300px em telas menores */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column-reverse;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero-content {
-      max-width: 90%;
-    }
-    .hero-image {
-        width: 350px; /* Reduz a largura para 300px em telas menores */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero {
-      flex-direction: column-reverse;
-      justify-content: center;
-      margin-top: 2rem;
-      gap: 1rem;
-    }
-    .hero-image {
-      width: 300px; /* Reduz a largura para 100px em telas pequenas */
-    }
-  }
-  
-/* serviços */
- 
-/* Estilo básico para as seções */
 .service-section {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 50vh; /* Centraliza verticalmente */
   padding: 20px;
-  background-color: var(--cor-fundo-2);  
+  background-color: var(--cor-fundo-2);
+}
+
+#servico1 {
+  padding-top: 10rem;
+  background-image: linear-gradient(to bottom, #fff4fc, #fff4fc, #fff4fc, #fff4fc, #fff4fc, #fff2fb, #fff1fb, #ffeffa, #ffebf8, #ffe8f6, #ffe4f4, #ffe0f2);
+}
+
+#servico12 {
+  padding-bottom: 10rem;
 }
 
 .service-wrapper {

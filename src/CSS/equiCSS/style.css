@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
+    margin-bottom: 2rem;
   }
 
   .info-thais h2 {
@@ -93,6 +94,8 @@
     .info-thais {
       max-width: 100%;
       align-items: center; /* Centraliza os textos horizontalmente */
+      margin-bottom: 0;
+      padding: 0 2rem;
     }
     .info-thais h2 {
       font-size: var(--fonte-tamanho-5);
@@ -105,6 +108,7 @@
     }
     .info-thais p {
       font-size: var(--fonte-tamanho-6);
+      text-align: center;
     }
     .image-thais {
       max-width: 100%;
@@ -147,7 +151,7 @@
   .service-content h2 {
     font-size: var(--fonte-tamanho-3);
     font-family: var(--fonte-principal);
-    font-weight: var(--fonte-peso-3);
+    font-weight: var(--fonte-peso-1);
     color: var(--cor-1);
     margin-bottom: 1rem;
   }
@@ -159,11 +163,16 @@
     color: var(--cor-2);
     margin-bottom: 1rem;
   }
-
-  .service-content .description-text {
-    font-weight: 300;
-  }
   
+  .service-content .description-message {
+    font-size: var(--fonte-tamanho-6);
+    font-family: var(--fonte-principal);
+    font-weight: var(--fonte-peso-1);
+    color: var(--cor-1);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   .service-image {
     max-width: 40%;
     border-radius: 8px;
