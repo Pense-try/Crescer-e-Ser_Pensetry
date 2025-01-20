@@ -22,15 +22,14 @@ body, main {
 .content__section__about__text {
     max-width: 1200px;
     padding: 2rem;
-    background-color: #f594b32d ;
+    background-color: #ffffff80;
     border-radius: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur( 4.5px );
-    -webkit-backdrop-filter: blur( 4.5px );
 }
 
 .content__section__about__text h1 {
-    color: var(--cor-2);
+    color: var(--cor-1);
     font-size: var(--fonte-tamanho-2);
     font-weight: var(--fonte-peso-1);
     font-family: var(--fonte-principal);
@@ -39,7 +38,7 @@ body, main {
 }
 
 .content__section__about__text p {
-    color: var(--cor-fonte-2);
+    color: var(--cor-2);
     font-size: var(--fonte-tamanho-5);
     font-weight: var(--fonte-peso-5);
     font-family: var(--fonte-principal);
@@ -135,7 +134,7 @@ body, main {
 }
 
 .content__section__about__navgation h1 {
-    color: var(--cor-2);
+    color: var(--cor-1);
     font-size: var(--fonte-tamanho-2);
     font-weight: var(--fonte-peso-1);
     font-family: var(--fonte-principal);
@@ -189,7 +188,7 @@ body, main {
 }
 
 .content__section__cards__title h1 {
-    color: var(--cor-2);
+    color: var(--cor-1);
     font-size: var(--fonte-tamanho-2);
     font-weight: var(--fonte-peso-1);
     font-family: var(--fonte-principal);
@@ -409,7 +408,7 @@ body, main {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 2rem 0 2rem;
+  padding: 6rem 2rem 0 2rem;
   background-color: var(--cor-fundo-2);
   text-align: center;
 }

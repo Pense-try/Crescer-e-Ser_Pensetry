@@ -81,7 +81,7 @@
     border: 5px solid var(--cor-1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--cor-2);
+    background-color: #fff4fc;
   }
 
   .image-container img:hover {
