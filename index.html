@@ -1,257 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Crescer e Ser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Crescer e Ser</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./src/CSS/reset.css">
-    <link rel="stylesheet" href="./src/CSS/variables.css">
-    <link rel="stylesheet" href="./src/CSS/navbar.css">
-    <link rel="stylesheet" href="./src/CSS/home.css">
-    <link rel="stylesheet" href="./src/CSS/style.css">
-    <link rel="stylesheet" href="./src/CSS/footer.css">
-    
+  <link rel="stylesheet" href="./src/CSS/reset.css">
+  <link rel="stylesheet" href="./src/CSS/variables.css">
+  <link rel="stylesheet" href="./src/CSS/navbar.css">
+  <link rel="stylesheet" href="./src/CSS/home.css">
+  <link rel="stylesheet" href="./src/CSS/style.css">
+  <link rel="stylesheet" href="./src/CSS/footer.css">
+
 </head>
+
 <body>
   <header>
     <nav class="nav-bar">
-        <div class="logo">
-            <a href="#"><img src="./src/Img/Logo_crescer.png" alt=""></a>
-        </div>
-        <div class="nav-list">
-            <ul>
-                <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="./equipe.html" class="nav-link">Equipe</a></li>
-                <li class="nav-item"><a href="./servico.html" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-        </div>
+      <div class="logo">
+        <a href="#"><img src="./src/Img/Logo_crescer.png" alt=""></a>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="./equipe.html" class="nav-link">Equipe</a></li>
+          <li class="nav-item"><a href="./servico.html" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
 
-        <div class="mobile-menu-icon">
-            <button onclick="menuShow()"><img class="icon" src="./src/Img/menu-icon.png" alt=""></button>
-        </div>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="./src/Img/menu-icon.png" alt=""></button>
+      </div>
     </nav>
     <div class="mobile-menu">
-        <ul>
-            <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-            <li class="nav-item"><a href="./equipe.html" class="nav-link">Equipe</a></li>
-            <li class="nav-item"><a href="./servico.html" class="nav-link">Serviços</a></li>
-        </ul>
+      <ul>
+        <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+        <li class="nav-item"><a href="./equipe.html" class="nav-link">Equipe</a></li>
+        <li class="nav-item"><a href="./servico.html" class="nav-link">Serviços</a></li>
+      </ul>
     </div>
-</header>
-    
-      <main>
-        <section class="home-section" id="home">
-          <!-- Círculos de fundo -->
-          <div class="circle c1"></div>
-          <div class="circle c2"></div>
-          <div class="circle c3"></div>
-          <div class="circle c4"></div>
-      
-          <!-- Conteúdo textual -->
-          <div class="content">
-            <p class="intro">Bem-vindo à Clínica</p>
-            <h1>Crescer e Ser</h1>
-            <h2>Cuidando da sua mente, acolhendo suas emoções</h2>
-            <p class="description">Aqui você encontra informações incríveis sobre o que fazemos. Explore nosso site para saber mais sobre nossas iniciativas e serviços.</p>
-            <a href="#about">Saiba Mais</a>
-          </div>
-      
-          <!-- Imagem -->
-          <div class="image-container">
-            <img src="./src/Img/Img__home.png" alt="Imagem descritiva">
-          </div>
-        </section>
+  </header>
 
-        <section class="content__section__about" id="about">
-          <div class="content__section__about__text">
-            <h1>Sobre a Clínica Crescer e Ser</h1>
-            <p>Na Clínica Crescer e Ser, nosso compromisso é transformar vidas. Mais do que oferecer serviços voltados à saúde mental, somos um espaço acolhedor, dedicado a promover o equilíbrio, o autoconhecimento e a superação de desafios. Acreditamos que cada pessoa possui um potencial único para crescer e ser a sua melhor versão, e estamos aqui para caminhar ao seu lado nessa jornada.
-              <br>
-              Com uma abordagem humanizada e integrada, trabalhamos para fazer a diferença na vida de quem confia em nosso trabalho. Cada detalhe da clínica reflete nosso propósito de proporcionar bem-estar e transformação.
-              <br>
-              Esse compromisso e visão nasceram do sonho e da dedicação de uma mulher que acredita profundamente no poder da mudança e do cuidado: nossa idealizadora, Thaís.</p>
-          </div>
+  <main>
+    <section class="home-section" id="home">
+      <!-- Círculos de fundo -->
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+      <div class="circle c4"></div>
 
-          <div class="content__section__about__navgation">
+      <!-- Conteúdo textual -->
+      <div class="content">
+        <p class="intro">Bem-vindo à Clínica</p>
+        <h1>Crescer e Ser</h1>
+        <h2>Juntos, promovemos o desenvolvimento físico, emocional, e cognitivo da infância a vida adulta!</h2>
+        <p class="description">Aqui você encontra informações incríveis sobre o que fazemos. Explore nosso site para
+          saber mais sobre nossas iniciativas e serviços.</p>
+        <a href="#about">Saiba Mais</a>
+      </div>
 
-            <h1>Navegue pela Clínica <i class="fa-solid fa-sailboat fa-lg" style="color: var(--color-1)"></i></h1>
-            <div class="content__section__about__navgation__links">
-              <a href="./servico.html">Todos os Serviços <i class="fa-solid fa-user-doctor fa-lg" style="color: #ffffff;"></i></a>
-              <a href="./equipe.html" >Conheça nossos Profissionais <i class="fa-solid fa-address-card fa-lg" style="color: #ffffff;"></i></a>
-              <a href="#contato">Entre em Contato <i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i></a>
-              <a href="#location">Localização <i class="fa-solid fa-map-location-dot fa-lg" style="color: #ffffff;"></i></a>
-              <a href="https://www.instagram.com/espaco_crescereser/?igsh=cm1rZm4yYjBzNXFp" target="_blank">Instagram da Clínica <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
-            </div>
-          </div>
+      <!-- Imagem -->
+      <div class="image-container">
+        <img src="./src/Img/Img__home.png" alt="Imagem descritiva">
+      </div>
+    </section>
 
-          <div class="content__section__cards__title" id="CD">
-            <h1>Nossos Serviços</h1>
-          </div>
+    <section class="content__section__about" id="about">
+      <div class="content__section__about__text">
+        <h1>Sobre a Clínica Crescer e Ser</h1>
+        <p>Na Clínica Crescer e Ser, nosso compromisso é transformar vidas. Mais do que oferecer serviços voltados à
+          saúde mental, somos um espaço acolhedor, dedicado a promover o equilíbrio, o autoconhecimento e a superação de
+          desafios. Acreditamos que cada pessoa possui um potencial único para crescer e ser a sua melhor versão, e
+          estamos aqui para caminhar ao seu lado nessa jornada.
+          <br>
+          Com uma abordagem humanizada e integrada, trabalhamos para fazer a diferença na vida de quem confia em nosso
+          trabalho. Cada detalhe da clínica reflete nosso propósito de proporcionar bem-estar e transformação.
+          <br>
+          Esse compromisso e visão nasceram do sonho e da dedicação de uma mulher que acredita profundamente no poder da
+          mudança e do cuidado: nossa idealizadora, Thaís.
+        </p>
+      </div>
 
-          <div class="card-section" id="services">
-            <div class="card">
-              <i class="fa-solid fa-masks-theater fa-2x"></i>
-              <h2>Psicoterapia para Crianças e Adolescentes</h2>
-              <p>Apoio emocional e desenvolvimento de habilidades para enfrentar os desafios da infância e adolescência.</p>
-              <a href="./servico.html#servico1">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-brain fa-2x"></i>
-              <h2>Psicoterapia para Adultos</h2>
-              <p>Cuidado com a saúde mental para promover equilíbrio e bem-estar na vida adulta.</p>
-              <a href="./servico.html#servico2">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-puzzle-piece fa-2x"></i>
-              <h2>Terapia ABA</h2>
-              <p>Abordagem focada em promover habilidades sociais e comportamentais, especialmente para TEA.</p>
-              <a href="./servico.html#servico3">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-chart-simple fa-2x"></i>
-              <h2>Avaliações Neuropsicológicas</h2>
-              <p>Diagnósticos precisos para compreender o funcionamento cognitivo e emocional.</p>
-              <a href="./servico.html#servico4">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-handshake-simple fa-2x"></i>
-              <h2>Grupo Terapêutico - Habilidades para a Vida</h2>
-              <p>Encontros para fortalecer habilidades sociais e emocionais em grupo.</p>
-              <a href="./servico.html#servico5">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-people-group fa-2x"></i>
-              <h2>Orientação Parental</h2>
-              <p>Apoio aos pais para lidar com os desafios do desenvolvimento dos filhos.</p>
-              <a href="./servico.html#servico6">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-bullseye fa-2x"></i>
-              <h2>Orientação Profissional</h2>
-              <p>Ajuda na escolha da profissão e no planejamento de carreira com propósito.</p>
-              <a href="./servico.html#servico7">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-person-walking fa-2x"></i>
-              <h2>Fisioterapia - Da Infância à Vida Adulta</h2>
-              <p>Cuidado físico para melhorar a mobilidade e qualidade de vida em todas as idades.</p>
-              <a href="./servico.html#servico8">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-apple-whole fa-2x"></i>
-              <h2>Nutrição Infantojuvenil - TEA e TDAH</h2>
-              <p>Planos alimentares personalizados para apoiar o desenvolvimento das crianças.</p>
-              <a href="./servico.html#servico9">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-book fa-2x"></i>
-              <h2>Acompanhamento Psicopedagógico</h2>
-              <p>Suporte no processo de aprendizagem e no desenvolvimento de habilidades escolares.</p>
-              <a href="./servico.html#servico10">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-pen fa-2x"></i>
-              <h2>Reforço Escolar</h2>
-              <p>Apoio individualizado para superar dificuldades e aprimorar o desempenho acadêmico</p>
-              <a href="./servico.html#servico11">Saiba mais</a>
-            </div>
-            <div class="card">
-              <i class="fa-solid fa-music fa-2x"></i>
-              <h2>Musicalização Infantil</h2>
-              <p>Estimulação cognitiva e emocional por meio da música e brincadeiras sonoras.</p>
-              <a href="./servico.html#servico12">Saiba mais</a>
-            </div>
-          </div>          
-        </section> 
+      <div class="content__section__about__navgation">
 
-        <section class="content__location" id="location">
-          <div class="location-section">
-            <div class="location-text">
-              <h2>Localização</h2>
-              <p>Estamos localizados no coração da cidade, proporcionando fácil acesso para todos os nossos clientes.</p>
-              <p>Endereço: Rua Exemplo, 155 - Centro, Rosário do Ivaí - PR</p>
-              <p>Horário de Funcionamento: Segunda a Sexta, das 8h às 19h.</p>
-              <a href="https://maps.app.goo.gl/X1kn5yF8QtdxF9FF6" target="_blank">Abrir no Google Maps</a>
-            </div>
-            <div class="location-map">
-              <!-- Incorporar mapa do Google Maps -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.9631511346098!2d-51.248592514052085!3d-24.259074140538097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ebfbcc9546cdbf%3A0xb30787e0de3f2fef!2sR.%20Arapongas%2C%20155%2C%20Ros%C3%A1rio%20do%20Iva%C3%AD%20-%20PR%2C%2086850-000!5e0!3m2!1spt-BR!2sbr!4v1735064781093!5m2!1spt-BR!2sbr"
-                allowfullscreen="" 
-                loading="lazy">
-              ></iframe>
-            </div>
-          </div>
-        </section>
+        <h1>Navegue pela Clínica <i class="fa-solid fa-sailboat fa-lg" style="color: var(--color-1)"></i></h1>
+        <div class="content__section__about__navgation__links">
+          <a href="./servico.html">Todos os Serviços <i class="fa-solid fa-user-doctor fa-lg"
+              style="color: #ffffff;"></i></a>
+          <a href="./equipe.html">Conheça nossos Profissionais <i class="fa-solid fa-address-card fa-lg"
+              style="color: #ffffff;"></i></a>
+          <a href="#contato">Entre em Contato <i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i></a>
+          <a href="#location">Localização <i class="fa-solid fa-map-location-dot fa-lg" style="color: #ffffff;"></i></a>
+          <a href="https://www.instagram.com/espaco_crescereser/?igsh=cm1rZm4yYjBzNXFp" target="_blank">Instagram da
+            Clínica <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+        </div>
+      </div>
 
-        <section class="content__contact" id="contato">
-          <div class="contact-section">
-            <div class="contact-info">
-              <h2>Entre em Contato</h2>
-              <p>Fale conosco pelo WhatsApp ou siga-nos no Instagram!</p>
-              <ul>
-                <li>
-                  <a href="https://wa.me/554396434704" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/espaco_crescereser/?igsh=cm1rZm4yYjBzNXFp" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> Instagram
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact-image">
-              <img src="./src/Img/Img_contact.png" alt="Crianças apontando para cima">
-            </div>
-          </div>          
-        </section>  
-        
-        <footer class="clinic-footer">
-          <div class="footer-container">
-            <!-- Logo clicável -->
-            <a href="#" class="footer-logo">
-              <img src="./src/Img/Logo_crescer.png" alt="Logo da Clínica Infantil">
-            </a>
-        
-            <!-- Navegação interna -->
-            <nav class="footer-navigation">
-              <a href="#home">Home</a>
-              <a href="#CD">Todos os Serviços</a>
-              <a href="./equipe.html">Nossos Profissionais</a>
-              <a href="#location">Localização</a>
-            </nav>
-        
-            <!-- Links de redes sociais -->
-            <div class="footer-socials">
+      <div class="content__section__cards__title" id="CD">
+        <h1>Nossos Serviços</h1>
+      </div>
+
+      <div class="card-section" id="services">
+        <div class="card">
+          <i class="fa-solid fa-masks-theater fa-2x"></i>
+          <h2>Psicoterapia para Crianças e Adolescentes</h2>
+          <p>Apoio emocional e desenvolvimento de habilidades para enfrentar os desafios da infância e adolescência.</p>
+          <a href="./servico.html#servico1">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-brain fa-2x"></i>
+          <h2>Psicoterapia para Adultos</h2>
+          <p>Cuidado com a saúde mental para promover equilíbrio e bem-estar na vida adulta.</p>
+          <a href="./servico.html#servico2">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-puzzle-piece fa-2x"></i>
+          <h2>Terapia ABA</h2>
+          <p>Abordagem focada em promover habilidades sociais e comportamentais, especialmente para TEA.</p>
+          <a href="./servico.html#servico3">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-chart-simple fa-2x"></i>
+          <h2>Avaliações Neuropsicológicas</h2>
+          <p>Diagnósticos precisos para compreender o funcionamento cognitivo e emocional.</p>
+          <a href="./servico.html#servico4">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-handshake-simple fa-2x"></i>
+          <h2>Grupo Terapêutico - Habilidades para a Vida</h2>
+          <p>Encontros para fortalecer habilidades sociais e emocionais em grupo.</p>
+          <a href="./servico.html#servico5">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-people-group fa-2x"></i>
+          <h2>Orientação Parental</h2>
+          <p>Apoio aos pais para lidar com os desafios do desenvolvimento dos filhos.</p>
+          <a href="./servico.html#servico6">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-bullseye fa-2x"></i>
+          <h2>Orientação Profissional</h2>
+          <p>Ajuda na escolha da profissão e no planejamento de carreira com propósito.</p>
+          <a href="./servico.html#servico7">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-person-walking fa-2x"></i>
+          <h2>Fisioterapia - Da Infância à Vida Adulta</h2>
+          <p>Cuidado físico para melhorar a mobilidade e qualidade de vida em todas as idades.</p>
+          <a href="./servico.html#servico8">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-apple-whole fa-2x"></i>
+          <h2>Nutrição Infantojuvenil - TEA e TDAH</h2>
+          <p>Planos alimentares personalizados para apoiar o desenvolvimento das crianças.</p>
+          <a href="./servico.html#servico9">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-book fa-2x"></i>
+          <h2>Acompanhamento Psicopedagógico</h2>
+          <p>Suporte no processo de aprendizagem e no desenvolvimento de habilidades escolares.</p>
+          <a href="./servico.html#servico10">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-pen fa-2x"></i>
+          <h2>Reforço Escolar</h2>
+          <p>Apoio individualizado para superar dificuldades e aprimorar o desempenho acadêmico</p>
+          <a href="./servico.html#servico11">Saiba mais</a>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-music fa-2x"></i>
+          <h2>Musicalização Infantil</h2>
+          <p>Estimulação cognitiva e emocional por meio da música e brincadeiras sonoras.</p>
+          <a href="./servico.html#servico12">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__location" id="location">
+      <div class="location-section">
+        <div class="location-text">
+          <h2>Localização</h2>
+          <p>Estamos localizados no coração da cidade, proporcionando fácil acesso para todos os nossos clientes.</p>
+          <p>Endereço: Rua Exemplo, 155 - Centro, Rosário do Ivaí - PR</p>
+          <p>Horário de Funcionamento: Segunda a Sexta, das 8h às 19h.</p>
+          <a href="https://maps.app.goo.gl/X1kn5yF8QtdxF9FF6" target="_blank">Abrir no Google Maps</a>
+        </div>
+        <div class="location-map">
+          <!-- Incorporar mapa do Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.9631511346098!2d-51.248592514052085!3d-24.259074140538097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ebfbcc9546cdbf%3A0xb30787e0de3f2fef!2sR.%20Arapongas%2C%20155%2C%20Ros%C3%A1rio%20do%20Iva%C3%AD%20-%20PR%2C%2086850-000!5e0!3m2!1spt-BR!2sbr!4v1735064781093!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy">
+            ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__contact" id="contato">
+      <div class="contact-section">
+        <div class="contact-info">
+          <h2>Entre em Contato</h2>
+          <p>Fale conosco pelo WhatsApp ou siga-nos no Instagram!</p>
+          <ul>
+            <li>
               <a href="https://wa.me/554396434704" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
               </a>
+            </li>
+            <li>
               <a href="https://www.instagram.com/espaco_crescereser/?igsh=cm1rZm4yYjBzNXFp" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
+                <i class="fa-brands fa-instagram"></i> Instagram
               </a>
-            </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-image">
+          <img src="./src/Img/Img_contact.png" alt="Crianças apontando para cima">
+        </div>
+      </div>
+    </section>
 
-             <!-- Informações da clínica -->
-             <div class="footer-info">
-              <p>© 2024 Clínica Crescer e Ser - Todos os direitos reservados.</p>
-            </div>
-          </div>
-        </footer>
-        
+    <footer class="clinic-footer">
+      <div class="footer-container">
+        <!-- Logo clicável -->
+        <a href="#" class="footer-logo">
+          <img src="./src/Img/Logo_crescer.png" alt="Logo da Clínica Infantil">
+        </a>
 
-      </main>
-    
-      <script src="./src/JS/navbar.js"></script>
-    
+        <!-- Navegação interna -->
+        <nav class="footer-navigation">
+          <a href="#home">Home</a>
+          <a href="#CD">Todos os Serviços</a>
+          <a href="./equipe.html">Nossos Profissionais</a>
+          <a href="#location">Localização</a>
+        </nav>
+
+        <!-- Links de redes sociais -->
+        <div class="footer-socials">
+          <a href="https://wa.me/554396434704" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://www.instagram.com/espaco_crescereser/?igsh=cm1rZm4yYjBzNXFp" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+
+        <!-- Informações da clínica -->
+        <div class="footer-info">
+          <p>© 2024 Clínica Crescer e Ser - Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <script src="./src/JS/navbar.js"></script>
+
 </body>
+
 </html>
