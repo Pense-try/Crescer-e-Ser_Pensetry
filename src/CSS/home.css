@@ -159,9 +159,27 @@
       max-width: 80%;
       margin-bottom: 20px;
     }
-    .circle {
-      display: none; /* Ocultar círculos no mobile para melhor visualização */
+    .circle.c1 {
+      width: 100px;
+      height: 100px;
     }
+    .circle.c2 {
+      width: 150px;
+      height: 150px;
+    }
+    .circle.c3 {
+      width: 100px;
+      height: 100px;
+      bottom: 10%;
+      left: 5%;
+    }
+    .circle.c4 {
+      width: 175px;
+      height: 175px;
+      bottom: 2%;
+      right: 1%;
+    }
+    
   }
 
   @media (max-width: 480px) {
